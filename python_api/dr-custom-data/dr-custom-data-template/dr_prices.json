@@ -1,6 +1,7 @@
 [
   {
     "type": "price-tou",
+    "notification-date": "<%Y-%m-%dT%H:%M:%S>",
     "start-date": "<%Y-%m-%dT%H:%M:%S>",
     "end-date": "<%Y-%m-%dT%H:%M:%S>",
     "data":
@@ -11,6 +12,7 @@
   },
   {
     "type": "price-rtp",
+    "notification-date": "<%Y-%m-%dT%H:%M:%S>",
     "start-date": "<%Y-%m-%dT%H:%M:%S>",
     "end-date": "<%Y-%m-%dT%H:%M:%S>",
     "data": [<timeseries of floats>]
