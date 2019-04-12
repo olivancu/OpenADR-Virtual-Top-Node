@@ -1,0 +1,12 @@
+[
+  {
+    "type": "dr-track",
+    "notification-date": "<%Y-%m-%dT%H:%M:%S>",
+    "data":
+    {
+      "profile": <timeseries of float(kWh)>,
+      "start-date": "<%Y-%m-%dT%H:%M:%S>",
+      "end-date": "<%Y-%m-%dT%H:%M:%S>"
+    }
+  }
+]

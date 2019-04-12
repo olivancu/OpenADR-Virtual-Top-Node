@@ -1,0 +1,12 @@
+[
+  {
+    "type": "dr-limit",
+    "notification-date": "2019-04-15T00:00:00",
+    "data":
+    {
+      "power": 40,
+      "start-date": "2019-04-15T12:00:00",
+      "end-date": "2019-04-15T18:00:00"
+    }
+  }
+]

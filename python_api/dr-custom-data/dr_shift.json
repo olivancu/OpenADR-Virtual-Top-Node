@@ -1,0 +1,15 @@
+[
+  {
+    "type": "dr-shift",
+    "notification-date": "2019-04-15T00:00:00",
+    "data":
+    {
+      "power-shed": -5,
+      "power-shift": 5,
+      "start-date-shed": "2019-04-15T14:00:00",
+      "end-date-shed": "2019-04-15T16:00:00",
+      "start-date-shift": "2019-04-15T16:00:00",
+      "end-date-shift": "2019-04-15T18:00:00"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "dr-limit",
+    "notification-date": "<%Y-%m-%dT%H:%M:%S>",
+    "data":
+    {
+      "power": <float(kWh)>,
+      "start-date": "<%Y-%m-%dT%H:%M:%S>",
+      "end-date": "<%Y-%m-%dT%H:%M:%S>"
+    }
+  }
+]

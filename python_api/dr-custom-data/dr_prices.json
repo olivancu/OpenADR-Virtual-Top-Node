@@ -1,0 +1,11 @@
+[
+  {
+    "type": "price-tou",
+    "start-date": "2019-04-15T00:00:00",
+    "end-date": "2019-04-19T23:59:59",
+    "data":
+    {
+      "tariff-json": "u14328_Commercial_E-19_TOU_gridlevelSecondary_revised.json"
+    }
+  }
+]
