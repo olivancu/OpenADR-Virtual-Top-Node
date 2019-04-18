@@ -4,7 +4,7 @@
     "notification-date": "<%Y-%m-%dT%H:%M:%S>",
     "data":
     {
-      "power": <float(kWh)>,
+      "power": <float(kW)>,
       "start-date": "<%Y-%m-%dT%H:%M:%S>",
       "end-date": "<%Y-%m-%dT%H:%M:%S>"
     }

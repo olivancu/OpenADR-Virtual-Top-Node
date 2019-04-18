@@ -4,8 +4,8 @@
     "notification-date": "<%Y-%m-%dT%H:%M:%S>",
     "data":
     {
-      "power-shed": <float(kWh)>,
-      "power-shift": <float(kWh)>,
+      "energy-shed": <float(kWh)>,
+      "energy-shift": <float(kWh)>,
       "start-date-shed": "<%Y-%m-%dT%H:%M:%S>",
       "end-date-shed": "<%Y-%m-%dT%H:%M:%S>",
       "start-date-shift": "<%Y-%m-%dT%H:%M:%S>",
