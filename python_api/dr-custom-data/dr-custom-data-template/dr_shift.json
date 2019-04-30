@@ -4,12 +4,12 @@
     "notification-date": "<%Y-%m-%dT%H:%M:%S>",
     "data":
     {
-      "energy-shed": <float(kWh)>,
-      "energy-shift": <float(kWh)>,
-      "start-date-shed": "<%Y-%m-%dT%H:%M:%S>",
-      "end-date-shed": "<%Y-%m-%dT%H:%M:%S>",
-      "start-date-shift": "<%Y-%m-%dT%H:%M:%S>",
-      "end-date-shift": "<%Y-%m-%dT%H:%M:%S>"
+      "power-take": <float(kW)>,
+      "power-relax": <float(kW)>,
+      "start-date-take": "<%Y-%m-%dT%H:%M:%S>",
+      "end-date-take": "<%Y-%m-%dT%H:%M:%S>",
+      "start-date-relax": "<%Y-%m-%dT%H:%M:%S>",
+      "end-date-relax": "<%Y-%m-%dT%H:%M:%S>"
     }
   }
 ]
