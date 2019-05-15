@@ -22,21 +22,22 @@ def read_from_json(filename):
             try:
                 data_json = json.load(input_file)
             except ValueError:
-                print ('Could open {0} but failed to parse the json'.format(filename))
+                print(('Could open {0} but failed to parse the json'.format(filename)))
                 return None
     except:
-        print ('Cant open file {}'.format(filename))
+        print(('Cant open file {}'.format(filename)))
         return None
 
     return data_json
 
 
 # Load the config and the CostCalculator Module
-costcalculator_path = read_from_json("./settings.json")["cost_calculator_path"]
-sys.path.append(os.path.abspath(costcalculator_path))
-from cost_calculator.cost_calculator import CostCalculator
-from cost_calculator.tariff_structure import *
-from openei_tariff.openei_tariff_analyzer import *
+from electricitycostcalculator.cost_calculator.cost_calculator import CostCalculator
+from electricitycostcalculator.cost_calculator.tariff_structure import *
+from electricitycostcalculator.openei_tariff.openei_tariff_analyzer import *
+
+import os, electricitycostcalculator
+costcalculator_path = os.path.dirname(electricitycostcalculator.__file__) + '/'
 
 
 class DReventManager():
@@ -49,7 +50,7 @@ class DReventManager():
 
 
     def get_scheduled_amount(self, type_dr):
-        if type_dr not in self.__events_state.keys(): return 0
+        if type_dr not in list(self.__events_state.keys()): return 0
 
         return self.__events_state[type_dr]
 
@@ -110,7 +111,6 @@ class DReventManager():
             ret_dict['startdate'] = raw_data["start-date"]
             ret_dict['enddate'] = raw_data["end-date"]
             ret_dict['data_dr'] = self.get_df_powersignal((raw_data["start-date"], raw_data["end-date"]), raw_data['profile'])
-            print ret_dict
 
         return notif_time, ret_dict
 

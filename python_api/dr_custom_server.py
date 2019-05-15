@@ -39,8 +39,8 @@ def get_drevent_manager():
 #
 
 def print_receive_data(data_type, data_payload):
-    print "Receive {} signal from the DR server:".format(data_type)
-    print data_payload
+    print("Receive {} signal from the DR server:".format(data_type))
+    print(data_payload)
 
 # - Test
 @app.route('/')

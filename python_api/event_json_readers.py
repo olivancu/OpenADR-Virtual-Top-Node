@@ -2,7 +2,7 @@ import json
 from datetime import datetime
 import pytz
 from enum import Enum
-from VTN_Api import VTN_Api
+from .VTN_Api import VTN_Api
 
 EVENT_FILENAME = 'pdp_events.json'
 VTN_API_CONFIG_FILE = 'settings.json'
@@ -119,4 +119,4 @@ if __name__ == '__main__':
     for event_id in event_id_list:
         vtn_api_obj.publish_event(event_id=event_id)
 
-    print (vtn_api_obj.logout())
+    print((vtn_api_obj.logout()))
